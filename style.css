@@ -31,21 +31,14 @@
       animation: glow 2s ease-in-out infinite alternate;
     }
 
-    header a {
-      color: #fff; /* white text for header links */
-      text-decoration: none;
+    #home-title {
+      cursor: pointer;
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
     }
 
-    header a:visited {
-      color: #fff; /* keep same color even after being visited */
-    }
-
-    header a:hover {
-      color: #0ff; /* optional hover color (light cyan glow look) */
-    }
-
-    header a:active {
-      color: #0ff; /* same as hover when clicking */
+    #home-title:hover {
+      transform: scale(1.1); /* makes it 10% bigger */
+      text-shadow: 0 0 20px rgba(0, 200, 255, 0.8);
     }
 
     @keyframes glow {
