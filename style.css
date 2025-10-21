@@ -31,6 +31,23 @@
       animation: glow 2s ease-in-out infinite alternate;
     }
 
+    header a {
+      color: #fff; /* white text for header links */
+      text-decoration: none;
+    }
+
+    header a:visited {
+      color: #fff; /* keep same color even after being visited */
+    }
+
+    header a:hover {
+      color: #0ff; /* optional hover color (light cyan glow look) */
+    }
+
+    header a:active {
+      color: #0ff; /* same as hover when clicking */
+    }
+
     @keyframes glow {
       from {
         text-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff;
